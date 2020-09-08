@@ -11,7 +11,7 @@
 import Header from "./components/Header";
 
 export default {
-  name: "Vue WorkShop App",
+  name: "vue-workshop-app",
 
   components: {
     Header
