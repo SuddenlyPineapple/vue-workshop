@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import BasicComponent from "@/components/1_Basic_Component.vue";
+import BasicComponent from "../1_Basic_Component.vue";
 
 const updateWrapper = async wrapper => await wrapper.vm.$nextTick();
 

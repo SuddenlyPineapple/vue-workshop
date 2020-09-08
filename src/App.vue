@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <Header />
+    <Toolbar />
+    <Drawer />
     <v-main>
       <router-view></router-view>
     </v-main>
@@ -8,13 +9,12 @@
 </template>
 
 <script>
-import Header from "./components/Header";
-
 export default {
   name: "vue-workshop-app",
 
   components: {
-    Header
+    Toolbar: () => import("@/components/Toolbar.vue"),
+    Drawer: () => import("@/components/Drawer.vue")
   }
 };
 </script>

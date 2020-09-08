@@ -1,6 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
 import HelloWorld from "@/components/HelloWorld.vue";
-import Header from "@/components/Header.vue";
 
 describe("Should all pass 👌", () => {
   describe("HelloWorld component", () => {
@@ -10,14 +9,6 @@ describe("Should all pass 👌", () => {
         propsData: { msg }
       });
       expect(wrapper.text()).toMatch(msg);
-    });
-  });
-
-  describe("Header component", () => {
-    it("should render Header", () => {
-      const wrapper = shallowMount(Header);
-      console.log(wrapper.html()); // Sposób na podejrzenie zawartości renderowanego HTML'a
-      expect(wrapper.find("v-app-bar")).toBeDefined();
     });
   });
 });
