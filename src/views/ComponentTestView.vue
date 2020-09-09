@@ -23,13 +23,18 @@
 
 <script>
 import BasicComponent from "../components/1_Basic_Component";
+import ConditionalStatements from "../components/2_Conditional_Statements";
 
 export default {
   components: {
-    BasicComponent
+    BasicComponent,
+    ConditionalStatements
   },
   data: () => ({
-    componentList: [{ name: "1 - Basic Component", template: BasicComponent }]
+    componentList: [
+      { name: "1 - Basic Component", template: BasicComponent },
+      { name: "2 - Conditional Statements", template: ConditionalStatements }
+    ]
   })
 };
 </script>
