@@ -1,6 +1,6 @@
 <template>
   <v-card class="pa-5">
-    <Snackbar @unlock-button="unlock" />
+    <Snackbar />
     <v-btn :disabled="disabled">
       Nuclear bomb button 💥
     </v-btn>
@@ -19,7 +19,7 @@ export default {
   }),
   methods: {
     unlock() {
-      this.disabled = false;
+      //  Hint: tutaj musisz odblokować przycisk ;)
     }
   }
 };
