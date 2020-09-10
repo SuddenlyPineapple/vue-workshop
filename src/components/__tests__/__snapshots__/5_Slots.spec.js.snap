@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`5_Slots should render given component 1`] = `
+<v-card class="pa-5">
+  <v-text-field type="text"></v-text-field>
+  <v-btn>Yeah!</v-btn>
+</v-card>
+`;

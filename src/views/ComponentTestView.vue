@@ -12,7 +12,9 @@
               {{ singleComponent.name }}
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-              <component v-bind:is="singleComponent.template"></component>
+              <component v-bind:is="singleComponent.template">
+                <v-btn v-if="singleComponent.name === '5 - Slots'">Yeah!</v-btn>
+              </component>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
@@ -26,12 +28,16 @@ import BasicComponent from "../components/1_Basic_Component";
 import ConditionalStatements from "../components/2_Conditional_Statements";
 import ListRendered from "../components/3_List_Rendering";
 import ComputedProperties from "../components/4_Computed_Property";
+import Slots from "../components/5_Slots";
+import CustomEvents from "../components/6_Custom_Events_Parent";
 
 export default {
   components: {
     BasicComponent,
     ConditionalStatements,
-    ListRendered
+    ListRendered,
+    Slots,
+    CustomEvents
   },
   data: () => ({
     componentList: [
@@ -39,8 +45,8 @@ export default {
       { name: "2 - Conditional Statements", template: ConditionalStatements },
       { name: "3 - List Renderer", template: ListRendered },
       { name: "4 - Computed Properties", template: ComputedProperties },
-      { name: "", template: "" },
-      { name: "", template: "" }
+      { name: "5 - Slots", template: Slots },
+      { name: "6 - Custom Events", template: CustomEvents }
     ]
   })
 };

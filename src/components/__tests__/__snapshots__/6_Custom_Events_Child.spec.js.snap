@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`6_Custom_Events_Child should render child component 1`] = `
+<div class="v-snack v-snack--active v-snack--bottom v-snack--has-background" style="padding: 0px 0px 0px 0px;">
+  <transition-stub name="v-snack-transition">
+    <div class="v-snack__wrapper v-sheet theme--dark">
+      <div role="status" aria-live="polite" class="v-snack__content">
+        Hey, when you close me button will unlock 😉
+      </div>
+      <div class="v-snack__action "><button type="button" class="v-btn v-btn--flat v-btn--text theme--dark v-size--default red--text v-snack__btn"><span class="v-btn__content">
+      Close
+    </span></button></div>
+    </div>
+  </transition-stub>
+</div>
+`;
