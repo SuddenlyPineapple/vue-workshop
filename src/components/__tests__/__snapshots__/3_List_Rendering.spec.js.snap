@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`3_List_Rendering should render default list 1`] = `
+<v-card color="grey" class="white--text pa-5">
+  <h2>
+    Top
+    10 Hard Rock Songs Ever!
+  </h2>
+  <ol>
+    <li>
+      Guns N’ Roses - Welcome To The Jungle
+    </li>
+    <li>
+      AC/DC - Back In Black
+    </li>
+    <li>
+      AC/DC - Back In Black
+    </li>
+    <li>
+      Led Zeppelin - Whole Lotta Love
+    </li>
+    <li>
+      Black Sabbath - Paranoid
+    </li>
+    <li>
+      Metallica - Enter Sandman
+    </li>
+    <li>
+      The Who - Won’t Get Fooled Again
+    </li>
+    <li>
+      Nirvana - Smells Like Teen Spirit
+    </li>
+    <li>
+      Aerosmith - Walk This Way
+    </li>
+    <li>
+      Van Halen - Runnin With The Devil
+    </li>
+  </ol>
+</v-card>
+`;
+
+exports[`3_List_Rendering should render list with data given in props 1`] = `
+<v-card color="grey" class="white--text pa-5">
+  <h2>
+    My Top
+    3 Hard Rock Songs Ever!
+  </h2>
+  <ol>
+    <li>Mettalica - Whiskey in the Jar</li>
+    <li>Rise Against - Savior</li>
+    <li>Amaranthe - 82nd All The Way</li>
+  </ol>
+</v-card>
+`;

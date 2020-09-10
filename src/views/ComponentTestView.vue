@@ -24,16 +24,23 @@
 <script>
 import BasicComponent from "../components/1_Basic_Component";
 import ConditionalStatements from "../components/2_Conditional_Statements";
+import ListRendered from "../components/3_List_Rendering";
+import ComputedProperties from "../components/4_Computed_Property";
 
 export default {
   components: {
     BasicComponent,
-    ConditionalStatements
+    ConditionalStatements,
+    ListRendered
   },
   data: () => ({
     componentList: [
       { name: "1 - Basic Component", template: BasicComponent },
-      { name: "2 - Conditional Statements", template: ConditionalStatements }
+      { name: "2 - Conditional Statements", template: ConditionalStatements },
+      { name: "3 - List Renderer", template: ListRendered },
+      { name: "4 - Computed Properties", template: ComputedProperties },
+      { name: "", template: "" },
+      { name: "", template: "" }
     ]
   })
 };
