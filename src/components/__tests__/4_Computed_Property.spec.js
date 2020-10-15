@@ -8,6 +8,7 @@ describe("4_Computed_Properties", () => {
     const mockDate = new Date(1599763138465);
     jest.spyOn(global, "Date").mockImplementation(() => mockDate);
     const wrapper = getWrapper();
+
     expect(wrapper).toMatchSnapshot();
   });
 });
