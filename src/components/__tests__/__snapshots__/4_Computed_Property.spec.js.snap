@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`4_Computed_Properties should render actual time and date 1`] = `<span>Rendering Time: 10 wrzesień 2020, 20:38</span>`;
