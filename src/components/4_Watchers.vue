@@ -1,5 +1,5 @@
 <template>
-  <div id="watch-example">
+  <div>
     <v-text-field
       label="
       Ask a yes/no question:"
