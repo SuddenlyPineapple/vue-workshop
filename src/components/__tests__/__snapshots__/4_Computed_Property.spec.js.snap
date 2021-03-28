@@ -1,3 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`4_Computed_Properties should render actual time and date 1`] = `<span>Rendering Time: 10 wrzesień 2020, 20:38</span>`;
+exports[`4_Computed_Properties should render computed property component 1`] = `
+<div><span>Automatically transform text to uppercase:</span>
+  <div class="v-input teste theme--light v-text-field">
+    <div class="v-input__control">
+      <div class="v-input__slot">
+        <div class="v-text-field__slot"><input id="input-2" type="text"></div>
+      </div>
+      <div class="v-text-field__details">
+        <div class="v-messages theme--light">
+          <transition-group-stub tag="div" name="message-transition" class="v-messages__wrapper"></transition-group-stub>
+        </div>
+      </div>
+    </div>
+  </div> <span>
+    Result:
+    <span class="uppercase"></span></span>
+</div>
+`;
