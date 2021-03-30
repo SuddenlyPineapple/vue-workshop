@@ -17,6 +17,7 @@ export default {
   computed: {
     uppercaseInput() {
       // TODO: Make userInput big :D
+      return this.userInput;
     }
   }
 };
