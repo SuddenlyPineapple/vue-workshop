@@ -4,5 +4,6 @@ exports[`5_Slots should render given component 1`] = `
 <v-card class="pa-5">
   <v-text-field type="text"></v-text-field>
   <v-btn>Yeah!</v-btn>
+  <h1>I'm heading!</h1>
 </v-card>
 `;

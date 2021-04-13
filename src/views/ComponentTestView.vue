@@ -13,7 +13,12 @@
             </v-expansion-panel-header>
             <v-expansion-panel-content>
               <component v-bind:is="singleComponent.template">
-                <v-btn v-if="singleComponent.name === '5 - Slots'">Yeah!</v-btn>
+                <heading v-if="singleComponent.name === '5 - Slots'">
+                  <h1>Hell</h1>
+                </heading>
+                <p v-if="singleComponent.name === '5 - Slots'">
+                  Yeah!
+                </p>
               </component>
             </v-expansion-panel-content>
           </v-expansion-panel>
@@ -32,9 +37,11 @@ import Watchers from "../components/4_Watchers";
 import Slots from "../components/5_Slots";
 import CustomEvents from "../components/6_Custom_Events_Parent";
 import PokemonList from "../components/PokemonList";
+import Header from "../components/Header";
 
 export default {
   components: {
+    Header,
     BasicComponent,
     ConditionalStatements,
     ListRendered,
