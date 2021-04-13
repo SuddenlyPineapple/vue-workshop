@@ -1,5 +1,3 @@
 <template>
-  <v-card class="pa-5">
-    <v-text-field type="text" />
-  </v-card>
+  <v-card class="pa-5"> </v-card>
 </template>
