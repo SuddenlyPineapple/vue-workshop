@@ -12,12 +12,14 @@
               {{ singleComponent.name }}
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-              <heading v-if="singleComponent.name === '5 - Slots'">
-                <h1>Hell</h1>
-              </heading>
-              <p v-if="singleComponent.name === '5 - Slots'">
-                Yeah!
-              </p>
+              <component v-bind:is="singleComponent.template">
+                <heading v-if="singleComponent.name === '5 - Slots'">
+                  <h1>Hell</h1>
+                </heading>
+                <p v-if="singleComponent.name === '5 - Slots'">
+                  Yeah!
+                </p>
+              </component>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
