@@ -37,11 +37,9 @@ import Watchers from "../components/4_Watchers";
 import Slots from "../components/5_Slots";
 import CustomEvents from "../components/6_Custom_Events_Parent";
 import PokemonList from "../components/PokemonList";
-import Header from "../components/Header";
 
 export default {
   components: {
-    Header,
     BasicComponent,
     ConditionalStatements,
     ListRendered,
