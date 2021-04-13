@@ -34,6 +34,7 @@ import ComputedProperties from "../components/4_Computed_Property";
 import Watchers from "../components/4_Watchers";
 import Slots from "../components/5_Slots";
 import CustomEvents from "../components/6_Custom_Events_Parent";
+import PokemonList from "../components/PokemonList";
 
 export default {
   components: {
@@ -43,7 +44,8 @@ export default {
     ComputedProperties,
     Slots,
     CustomEvents,
-    Watchers
+    Watchers,
+    PokemonList
   },
   data: () => ({
     componentList: [
@@ -53,7 +55,8 @@ export default {
       { name: "4 - Computed Properties", template: ComputedProperties },
       { name: "4 - Watchers", template: Watchers },
       { name: "5 - Slots", template: Slots },
-      { name: "6 - Custom Events", template: CustomEvents }
+      { name: "6 - Custom Events", template: CustomEvents },
+      { name: "7 - Pokemon List", template: PokemonList }
     ]
   })
 };
