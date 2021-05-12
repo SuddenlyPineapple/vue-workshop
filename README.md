@@ -1,4 +1,5 @@
 # vue-workshop
+![build](https://travis-ci.org/SuddenlyPineapple/vue-workshop.svg?branch=master)
 
 ## Project setup
 ```
