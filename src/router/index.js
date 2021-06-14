@@ -28,6 +28,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/ComponentTestView")
   }
+  // TODO: Zdefiniuj tutaj jakiś nowy widok dla routera - oczywiście wcześniej wrzuć jakiś do folderu ../views :)
 ];
 
 const router = new VueRouter({

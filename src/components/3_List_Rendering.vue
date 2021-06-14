@@ -5,12 +5,10 @@
       {{ list ? list.length : defaultList.length }} Hard Rock Songs Ever!
     </h2>
     <ol v-if="list">
-      <li v-for="item in list" :key="item">{{ item }}</li>
+      <!-- TODO: Dodaj tutaj elementy korzystając z pętli -->
     </ol>
     <ol v-else>
-      <li v-for="song in defaultList" :key="song.title">
-        {{ song.band }} - {{ song.title }}
-      </li>
+      <!-- TODO: A tu wyrenderuj domyślną listę -->
     </ol>
   </v-card>
 </template>
