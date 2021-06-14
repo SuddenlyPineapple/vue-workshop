@@ -27,7 +27,7 @@ describe("4_Computed_Properties", () => {
   it("should transform user input to uppercase", async () => {
     const wrapper = getWrapper();
     wrapper.find("input").setValue("foo");
-    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick();
     expect(wrapper.find(".uppercase").text()).toBe("FOO");
   });
 });
