@@ -2,7 +2,7 @@
 
 exports[`4_Computed_Properties should render computed property component 1`] = `
 <div><span>Automatically transform text to uppercase:</span>
-  <div class="v-input teste theme--light v-text-field">
+  <div class="v-input theme--light v-text-field">
     <div class="v-input__control">
       <div class="v-input__slot">
         <div class="v-text-field__slot"><input id="input-2" type="text"></div>
