@@ -1,10 +1,10 @@
 <template>
   <div>
     <span>Automatically transform text to uppercase:</span>
-    <v-text-field v-model="userInput" class="teste"></v-text-field>
+    <v-text-field v-model="userInput"></v-text-field>
     <span>
       Result:
-      <span class="uppercase">{{ uppercaseInput }}</span>
+      <span class="uppercase"></span>
     </span>
   </div>
 </template>
@@ -13,12 +13,6 @@
 export default {
   data: () => ({
     userInput: ""
-  }),
-  computed: {
-    uppercaseInput() {
-      // TODO: Make userInput big :D
-      return this.userInput;
-    }
-  }
+  })
 };
 </script>
