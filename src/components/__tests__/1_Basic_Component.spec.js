@@ -1,33 +1,39 @@
-import { shallowMount } from "@vue/test-utils";
+import { mount, createLocalVue } from "@vue/test-utils";
 import BasicComponent from "../1_Basic_Component.vue";
-
-const updateWrapper = async wrapper => await wrapper.vm.$nextTick();
+import Vuetify from "vuetify";
 
 describe("1_Basic_Component", () => {
+  const localVue = createLocalVue();
+  let vuetify;
+
+  beforeEach(() => {
+    vuetify = new Vuetify();
+  });
+
   const getWrapper = propsData =>
-    shallowMount(BasicComponent, {
-      propsData
+    mount(BasicComponent, {
+      propsData,
+      localVue,
+      vuetify
     });
 
   it("should render Card with button", () => {
     const wrapper = getWrapper();
-    expect(wrapper.find("v-btn")).toBeDefined();
-    expect(wrapper.find("v-card")).toBeDefined();
-    expect(wrapper.find("v-card").props("color")).toBe("red");
-    expect(wrapper.text()).toContain("0");
+    expect(wrapper.find("button")).toBeDefined();
+    expect(wrapper.find(".v-card .red")).toBeDefined();
+    expect(wrapper.find("p").text()).toContain("0");
   });
 
   it("should pass color prop to component", () => {
     const wrapper = getWrapper({ color: "green" });
-    expect(wrapper.find("v-card").props("color")).toBe("green");
+    expect(wrapper.find(".v-card .green")).toBeDefined();
   });
 
   it("should increment value", async () => {
     const wrapper = getWrapper();
     expect(wrapper.find("p").text()).toContain("0");
 
-    wrapper.find("v-btn").trigger("click");
-    await updateWrapper(wrapper);
+    await wrapper.find("button").trigger("click");
 
     expect(wrapper.find("p").text()).toContain("1");
   });

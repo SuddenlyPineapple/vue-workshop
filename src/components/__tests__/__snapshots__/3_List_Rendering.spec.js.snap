@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`3_List_Rendering should render default list 1`] = `
-<v-card color="grey" class="white--text pa-5">
+<v-card-stub loaderheight="4" tag="div" color="grey" class="white--text pa-5">
   <h2>
     Top
     10 Hard Rock Songs Ever!
@@ -14,7 +14,7 @@ exports[`3_List_Rendering should render default list 1`] = `
       AC/DC - Back In Black
     </li>
     <li>
-      AC/DC - Back In Black
+      AC/DC - Thunderstruck
     </li>
     <li>
       Led Zeppelin - Whole Lotta Love
@@ -38,11 +38,11 @@ exports[`3_List_Rendering should render default list 1`] = `
       Van Halen - Runnin With The Devil
     </li>
   </ol>
-</v-card>
+</v-card-stub>
 `;
 
 exports[`3_List_Rendering should render list with data given in props 1`] = `
-<v-card color="grey" class="white--text pa-5">
+<v-card-stub loaderheight="4" tag="div" color="grey" class="white--text pa-5">
   <h2>
     My Top
     3 Hard Rock Songs Ever!
@@ -52,5 +52,5 @@ exports[`3_List_Rendering should render list with data given in props 1`] = `
     <li>Rise Against - Savior</li>
     <li>Amaranthe - 82nd All The Way</li>
   </ol>
-</v-card>
+</v-card-stub>
 `;
