@@ -1,8 +1,6 @@
-import Vue from "vue";
 import Vuetify from "vuetify";
 import { mount, createLocalVue } from "@vue/test-utils";
 
-Vue.use(Vuetify);
 const localVue = createLocalVue();
 
 import Parent from "../6_Custom_Events_Parent";

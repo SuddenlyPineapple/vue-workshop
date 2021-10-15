@@ -26,7 +26,7 @@ export default {
     defaultList: [
       { band: "Guns N’ Roses", title: "Welcome To The Jungle" },
       { band: "AC/DC", title: "Back In Black" },
-      { band: "AC/DC", title: "Back In Black" },
+      { band: "AC/DC", title: "Thunderstruck" },
       { band: "Led Zeppelin", title: "Whole Lotta Love" },
       { band: "Black Sabbath", title: "Paranoid" },
       { band: "Metallica", title: "Enter Sandman" },
