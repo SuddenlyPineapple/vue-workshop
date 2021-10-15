@@ -1,8 +1,6 @@
-import Vue from "vue";
 import Vuetify from "vuetify";
 import { mount, createLocalVue } from "@vue/test-utils";
 
-Vue.use(Vuetify);
 const localVue = createLocalVue();
 
 import Parent from "../6_Custom_Events_Parent";
@@ -15,17 +13,12 @@ describe("6_Custom_Events_Parent", () => {
     vuetify = new Vuetify();
   });
 
-  const stubFn = jest.fn();
-
   const getWrapper = () =>
     mount(Parent, {
       localVue,
       vuetify,
       stubs: {
         Snackbar
-      },
-      methods: {
-        unlock: stubFn
       }
     });
 
@@ -36,7 +29,11 @@ describe("6_Custom_Events_Parent", () => {
 
   it("should unlock button when it's child emit unlock-button event", async () => {
     const wrapper = getWrapper();
-    wrapper.find(Snackbar).vm.$emit("unlock-button");
-    expect(stubFn).toHaveBeenCalled();
+    
+    expect(wrapper.findAll("button").at(1).attributes().disabled).toBeDefined()
+    
+    await wrapper.findComponent(Snackbar).vm.$emit("unlock-button");
+
+    expect(wrapper.findAll("button").at(1).attributes().disabled).toBeUndefined()
   });
 });

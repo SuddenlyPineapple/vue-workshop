@@ -20,7 +20,7 @@ describe("Toolbar component", () => {
 
   it("should render Toolbar", () => {
     const wrapper = shallowMount(Toolbar, { store, localVue });
-    console.log(wrapper.html()); // Sposób na podejrzenie zawartości renderowanego HTML'a
+    // console.log(wrapper.html()); // Sposób na podejrzenie zawartości renderowanego HTML'a
     expect(wrapper.find("v-app-bar")).toBeDefined();
   });
 });
