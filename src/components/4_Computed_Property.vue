@@ -4,7 +4,7 @@
     <v-text-field v-model="userInput"></v-text-field>
     <span>
       Result:
-      <span class="uppercase">{{ uppercaseInput }}</span>
+      <span class="uppercase"></span>
     </span>
   </div>
 </template>
@@ -13,11 +13,6 @@
 export default {
   data: () => ({
     userInput: ""
-  }),
-  computed: {
-    uppercaseInput() {
-      return this.userInput.toUpperCase();
-    }
-  }
+  })
 };
 </script>

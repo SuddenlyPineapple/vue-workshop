@@ -1,6 +1,5 @@
 <template>
   <v-card class="pa-5 white--text" color="primary">
-    <slot name="heading"></slot>
-    <slot />
+    <!-- TODO: Add slots  -->
   </v-card>
 </template>
