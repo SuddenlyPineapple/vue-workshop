@@ -19,14 +19,15 @@ describe("1_Basic_Component", () => {
 
   it("should render Card with button", () => {
     const wrapper = getWrapper();
+
     expect(wrapper.find("button")).toBeDefined();
-    expect(wrapper.find(".v-card .red")).toBeDefined();
+    expect(wrapper.find(".v-card.red").exists()).toBeTruthy();
     expect(wrapper.find("p").text()).toContain("0");
   });
 
   it("should pass color prop to component", () => {
     const wrapper = getWrapper({ color: "green" });
-    expect(wrapper.find(".v-card .green")).toBeDefined();
+    expect(wrapper.find(".v-card.green").exists()).toBeTruthy();
   });
 
   it("should increment value", async () => {
